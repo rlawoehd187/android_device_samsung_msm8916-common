@@ -246,6 +246,11 @@ void init_target_properties(void)
 		model = (char *)"SM-J510F";
 		set_lte_properties();
 	}
+	else if (bootloader.find("J320N0") == 0) {
+		device = (char *)"j3ltekx";
+		model = (char *)"SM-J320N0";
+		set_lte_properties();
+	}
 	else {
 		return;
 	}
